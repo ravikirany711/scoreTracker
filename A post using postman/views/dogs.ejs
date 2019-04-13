@@ -1,0 +1,14 @@
+<h1>This is a dogs files which is been rendered through ejs template</h1>
+
+<% for(var i=0;i<dogs.length;i++){ %>
+	<li> <%= dogs[i] %></li>
+<% } %>
+
+
+<form action='adddogs' method='post'>
+<input type='text' placeholder='name' name='newDog'>
+<button>Add a new dog</button>
+</form>
+
+
+
